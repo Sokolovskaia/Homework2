@@ -1,5 +1,12 @@
+import math
+
+
 def wallpaper(room_width, room_length, room_height, wallpaper_width, wallpaper_length, wallpaper_repeat):
-    import math
+    """
+    >>> wallpaper(5, 6, 2.75, 1.06, 10, 0.64)
+    11
+    """
+
     room_perimeter = 2 * (room_width + room_length)
 
     panel_number_all = room_perimeter / wallpaper_width
@@ -18,7 +25,4 @@ print("Для комнаты указанных размеров вам потр
       "рулонов.\n"
       "Но мы рекомендуем Вам дополнительно приобрести еще"
       " 1-2 рулона на случай возможного повреждения обоев, например, во время ремонта")
-
-
-
 
